@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@.2.2/dist/css/boostrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<link rel="stylesheet" href="css-index.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    
+    <div id="content" style="--color-new-tab-page-attribution-foreground: rgba(32, 33, 36, 1.00); --color-new-tab-page-most-visited-foreground: rgba(32, 33, 36, 1.00); --ntp-logo-color: inherit;">
+      <div id="oneGoogleBarScrim" fixed="" hidden=""></div>
+    
+    <ntp-iframe id="oneGoogleBar" allow="camera chrome-untrusted://new-tab-page; display-capture chrome-untrusted://new-tab-page" src="chrome-untrusted://new-tab-page/one-google-bar?paramsencoded=" style="clip-path: url(&quot;#oneGoogleBarClipPath&quot;); z-index: 1000;"></ntp-iframe>
+    <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+    <dom-if style="display: none;"><template is="dom-if"></template></dom-if><ntp-logo id="logo"></ntp-logo>
+    
+    <div id="realboxContainer">
+      <ntp-realbox id="realbox" realbox-lens-search-enabled="" realbox-lens-search-enabled_="" width-behavior_="" shown="" can-show-secondary-side=""></ntp-realbox><dom-if restamp="" style="display: none;"><template is="dom-if"></template></dom-if></div>
+
+      
+      <div id="customizeButtonContainer"><cr-button id="customizeButton" title="Customise this page" aria-pressed="false" role="button" tabindex="0" aria-disabled="false" data-native-id="NewTabPageUI::kCustomizeChromeButtonElementId" has-prefix-icon_=""><div id="customizeIcon" slot="prefix-icon"></div><div id="customizeText">
+          Customise Chrome
+        </div></cr-button></div><div id="themeAttribution" hidden=""><div>Theme created by</div><img src="undefined"><img></div><dom-if style="display: none;"><template></template></dom-if><div id="contentBottomSpacer"></div></div>
+    
+      <a href="google.html">
+        
+      </a>
+  
+
+    <header id="oneGoogleBarScrim">
+    <nav id="main-nav">
+      
+      <a href="index.html">
+        <button class="Images">Google Images</button>
+      </a>
+      <a href="#">
+        <button class="Advanced">Google Advanced</button>
+        
+      </a>
+    </nav>
+    
+     </header>
+
+     <main>
+      <div class="container">
+
+      <article class="logo">
+        <img src="./Images/Google_2015_logo.svg.png" style="">
+        </article>
+        <div id="realboxContainer">
+        
+          <div id="inputWrapper">
+            <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-controls="matches" placeholder="Search Google or Type a URL" aria-expanded="false" aria-live="polite">
+          </div>
+        
+
+      <cr-realbox-icon id="icon" in-searchbox background-image mask-image="url()">
+        <div id="container">
+          <img id="image">
+          <div id="ImageOverlay"></div>
+          <div id="icon" style="-webkit-mask-image: url(//resources/images/icon_search.svg)"></div>
+        </div>
+        </cr-realbox-icon>
+        <button id="voiceSearchButton" class="realbox-icon-button" title="Search by voice"></button>
+        <button id="lensSearchButton" class="realbox-icon-button" title="Search by Image"></button>
+        <cr-realbox-dropdown id="matches" role="listbox" hidden>
+
+        </cr-realbox-dropdown>
+        </div>
+        <cr-most-visited id="mostVisited" visible_custom-links-enable_></cr-most-visited>
+
+        <a id="backgroundImageAttribution" hidden></a>
+
+
+
+
+      
+      </div>
+  </main>
+  <footer>
+    <div id="customizeButtonContainer">
+      <cr-button id="customizeButton" title="Customize this page" aria-pressed="false" role="button" tabindex="0" aria-disabled="false" data-native-id="new-tab-pageUI::kCustomizeChromeButtonElementId" has-prefix-icon_></cr-button> 
+    </div>
+    <div id="contentBottomSpacer"></div>
+  </footer>
+  </div>
+    <svg>
+      <defs>
+        <clipPath id="oneGoogleBarClipPath"> 
+          <rect x="-8" y="-8" width="996" height="80"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+ 
+
+</body>
+</html>
